@@ -107,12 +107,15 @@ namespace ControlC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 315);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(439, 319);
             this.Controls.Add(this.btnClearAreaTransferencia);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.tableViewControl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "FrmTelaPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ControlC";
             this.Resize += new System.EventHandler(this.FrmTelaPrincipal_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.tableViewControl)).EndInit();
