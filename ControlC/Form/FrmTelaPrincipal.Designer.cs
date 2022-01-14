@@ -32,12 +32,12 @@ namespace ControlC
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTelaPrincipal));
             this.tableViewControl = new System.Windows.Forms.DataGridView();
-            this.columnCdControl = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.columnText = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnClear = new System.Windows.Forms.Button();
             this.timerControlC = new System.Windows.Forms.Timer(this.components);
             this.btnClearAreaTransferencia = new System.Windows.Forms.Button();
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.columnCdControl = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columnText = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tableViewControl)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,18 +55,6 @@ namespace ControlC
             this.tableViewControl.Size = new System.Drawing.Size(414, 255);
             this.tableViewControl.TabIndex = 0;
             this.tableViewControl.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tableViewControl_CellClick);
-            // 
-            // columnCdControl
-            // 
-            this.columnCdControl.HeaderText = "Cód. Control";
-            this.columnCdControl.Name = "columnCdControl";
-            this.columnCdControl.ReadOnly = true;
-            // 
-            // columnText
-            // 
-            this.columnText.HeaderText = "Text";
-            this.columnText.Name = "columnText";
-            this.columnText.ReadOnly = true;
             // 
             // btnClear
             // 
@@ -103,6 +91,18 @@ namespace ControlC
             this.notifyIcon.Text = "ControlC";
             this.notifyIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseDoubleClick);
             // 
+            // columnCdControl
+            // 
+            this.columnCdControl.HeaderText = "Data e Hora";
+            this.columnCdControl.Name = "columnCdControl";
+            this.columnCdControl.ReadOnly = true;
+            // 
+            // columnText
+            // 
+            this.columnText.HeaderText = "Text";
+            this.columnText.Name = "columnText";
+            this.columnText.ReadOnly = true;
+            // 
             // FrmTelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,12 +126,12 @@ namespace ControlC
         #endregion
 
         private System.Windows.Forms.DataGridView tableViewControl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnCdControl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn columnText;
         private System.Windows.Forms.Button btnClear;
         public System.Windows.Forms.Timer timerControlC;
         private System.Windows.Forms.Button btnClearAreaTransferencia;
         private System.Windows.Forms.NotifyIcon notifyIcon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnCdControl;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columnText;
     }
 }
 

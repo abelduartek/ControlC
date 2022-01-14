@@ -14,7 +14,6 @@ namespace ControlC
     public partial class FrmTelaPrincipal : Form
     {
 
-        private static int count = 0;
         private string textoAnterior;
 
         public FrmTelaPrincipal()
@@ -37,8 +36,8 @@ namespace ControlC
             else
             {
                 textoAnterior = texto;
-                count += 1;
-                tableViewControl.Rows.Add(count, texto);
+                
+                tableViewControl.Rows.Add(DateTime.Now, texto);
             }
 
         }
@@ -46,7 +45,6 @@ namespace ControlC
         private void btnClear_Click(object sender, EventArgs e)
         {
             tableViewControl.Rows.Clear();
-            count = 0;
 
         }
 
